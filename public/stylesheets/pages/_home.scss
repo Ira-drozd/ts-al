@@ -1,0 +1,78 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.main-carousel{
+  height: 350px;
+  .owl-carousel{
+    height: 350px;
+  }
+}
+
+.banners-section {
+  background: #fafafa;
+
+
+  .banners-section__item {
+    padding: 0 15px;
+    margin: 15px 0;
+
+    .card-content {
+      padding: 10px;
+    }
+
+    .header {
+      margin: 0;
+      border-bottom: none;
+    }
+
+    a {
+      color: $main-color-text;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+.about-section {
+
+  .blue-card {
+    //  background: $main-lightblue;
+  }
+
+  .card .card-action a:not(.btn):not(.btn-small):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    //  color: $main-lightblue;
+  }
+
+  a {
+    // color: $main-lightblue;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 540px) {
+
+    .card.horizontal .card-image {
+      max-width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+
+    .card {
+      &.horizontal {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+
+
+}
+

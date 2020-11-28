@@ -1,0 +1,40 @@
+
+.gallery-section {
+  // margin-top: 40px;
+}
+
+.gallery-section__album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .img-wrap {
+    width: 100%;
+
+    @media (min-width: 615px) {
+      overflow: hidden;
+      position: relative;
+      width: 277px;
+      height: 200px;
+    }
+
+    img {
+      @media (min-width: 615px) {
+        min-width: 100%;
+        min-height: 100%;
+        max-width: 150%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+  }
+
+  .materialboxed {
+    width: 100%;
+  }
+}
+
+
+

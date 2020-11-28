@@ -1,0 +1,146 @@
+.header__nav {
+  display: flex;
+  margin-top: 20px;
+
+
+  &.toggle {
+    max-height: 450px;
+    @media (max-width: $mobile-s) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $medium) {
+
+    justify-content: center;
+    background: $main-lightblue;
+    width: 110%;
+    overflow: hidden;
+    height: auto;
+    max-height: 0px;
+    transition: max-height $transition-menu;
+  }
+
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+    @media (max-width: $medium) {
+      flex-direction: column;
+
+    }
+
+    li {
+
+      margin: 1px 0;
+      /* @media (max-width: $medium) {
+         margin: 15px 20px;
+       }*/
+
+      a {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding: 4px 12px;
+        margin: 0 3px;
+        color: $main-color-text;
+        border-radius: 1px;
+
+
+        @media (max-width: $medium) {
+          color: white;
+          display: inline-block;
+          width: 100%;
+          padding: 10px 12px;
+        }
+
+
+        &:hover {
+          text-decoration: none;
+          background: $main-lightblue;
+          color: white;
+          // box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+
+          @media (max-width: $medium) {
+            box-shadow: none;
+            background: rgb(0%, 29%, 56%, .3);
+
+          }
+        }
+      }
+    }
+  }
+
+  .header__nav_active {
+    background: $main-lightblue;
+    color: white;
+    // box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 1px;
+
+    @media (max-width: $medium) {
+      background: rgb(0%, 29%, 56%, .3);
+      box-shadow: none;
+    }
+  }
+}
+
+.header__nav-button {
+  display: none;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  @media (max-width: $medium) and (min-width: $mobile-s) {
+    display: flex;
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    //top: 50px;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  svg {
+    width: 54px;
+    height: 42px;
+    color: white;
+    background: $main-lightblue;
+    border-radius: 3px;
+    transition: color $transition-menu;
+   /* &:hover {
+      color: red;
+    }*/
+
+   /* &.visibility {
+      color: red;
+    }*/
+
+    &.open-menu {
+      &.visibility{
+        // color: red;
+        display: none;
+      }
+    }
+
+    &.close-menu {
+      display: none;
+      &.visibility{
+        // color: red;
+        display: block;
+      }
+    }
+
+  }
+
+
+}
+
+
+

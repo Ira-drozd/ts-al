@@ -1,0 +1,23 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $main-color-text;
+  //font: normal 125% / 1.4 'Titillium Web', sans-serif;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+}
+
+.main-header {
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+
+.main-subheader{
+  font-family: "Exo 2";
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: $main-lightblue;
+}
+

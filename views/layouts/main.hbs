@@ -1,0 +1,62 @@
+{{> head}}
+
+<body>
+
+{{> header}}
+
+{{> outer-menu}}
+
+{{{body}}}
+
+{{>footer}}
+
+<script src="js/jquery.min.js"></script>
+
+<sctipt src="js/nodemailer-ajax.js"></sctipt>
+
+<script src="js/header-toggle-menu.js"></script>
+<script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="js/m-carousel.js"></script>
+
+<script src="js/materialize-css/dist/js/materialize.min.js"></script>
+<script src="js/m-collapsible.js"></script>
+
+<script src="js/m-gallery.js"></script>
+
+<!--<script src="js/auth.js"></script>-->
+
+
+<sctipt src="js/nodemailer-ajax.js"></sctipt>
+<script src="js/mailer.js"></script>
+
+<script src="js/comments.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+<script src="js/title.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCwouwTqPzpggkexE3ggTbueBtB6u7PCcE",
+        authDomain: "ts-aluminium.firebaseapp.com",
+        databaseURL: "https://ts-aluminium.firebaseio.com",
+        projectId: "ts-aluminium",
+        storageBucket: "ts-aluminium.appspot.com",
+        messagingSenderId: "108324520276",
+        appId: "1:108324520276:web:5197eace8061953d9848c1",
+        measurementId: "G-0KZD4QY39B"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+
+</body>
+</html>

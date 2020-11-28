@@ -1,0 +1,21 @@
+.news-section__image {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+
+}
+
+.news-item-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

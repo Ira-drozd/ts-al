@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer__contacts {
+  background: $main-blue-footer;
+  color: white;
+
+  h2 {
+    padding: 10px 0;
+    margin-bottom: 40px;
+    position: relative;
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid;
+      color: white;
+      bottom: -10px;
+      left: 0;
+
+    }
+  }
+
+
+}
+
+.footer__contacts__item {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+
+  a {
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  svg {
+    height: 20px;
+    margin-right: 10px;
+    color: white;
+  }
+}
+
+.copyright {
+  height: 50px;
+  padding: 15px 0;
+}
+
+.footer__contacts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}

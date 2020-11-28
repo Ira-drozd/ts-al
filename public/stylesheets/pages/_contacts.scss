@@ -1,0 +1,91 @@
+.contacts-section {
+  // margin-top: 40px;
+
+  .social{
+    position: static;
+  }
+
+  a {
+    // color: $main-lightblue;
+    font-weight: 600;
+    //font-size: 1.1rem;
+    color: $main-blue-header;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.contacts-section__contact {
+
+  li {
+    display: flex;
+    align-items: center;
+
+    a {
+      padding: 5px;
+      display: flex;
+      align-items: center;
+
+    }
+  }
+
+  svg {
+    width: 25px;
+    @media (max-width: $medium) {
+      width: 40px;
+    }
+
+  }
+
+
+  .fa-telegram-plane {
+    color: #0088cc;
+  }
+
+  .fa-viber {
+    color: #665CAC;
+  }
+
+  .fa-whatsapp {
+    color: #25D366;
+  }
+
+  .fa-facebook-square {
+    color: #3b5998;
+  }
+
+  .fa-instagram-square {
+    color: #E1306C;
+  }
+
+  .fa-linkedin {
+    color: #0072b1;
+  }
+}
+
+.contacts-section__map {
+  margin-top: 40px;
+}
+
+.contacts-section__form{
+ .flex-button{
+   display: flex;
+   justify-content: center;
+ }
+  /*
+  !* label focus color *!
+  .input-field input[type=text]:focus + label {
+    color: #039be5;
+  }
+  !* label color *!
+  .input-field label {
+    color: #039be5;
+  }
+  !* label underline focus color *!
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #039be5;
+    box-shadow: 0 1px 0 0 #039be5;
+  }*/
+}
