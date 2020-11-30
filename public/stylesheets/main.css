@@ -9054,9 +9054,27 @@ body {
 
 .main-carousel {
   height: 350px;
+  /* ul:nth-child(3n + 1) {
+     background-color: lighten($base-color, $i * 5%);
+   }*/
+  /* ul:nth-child(3n + 2) {
+     background-color: lighten($base-color, $i * 5%);
+   }*/
 }
 .main-carousel .owl-carousel {
   height: 350px;
+}
+.main-carousel .carousel-item-2, .main-carousel .carousel-item-1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100vw;
+}
+.main-carousel .carousel-item-1 {
+  background-image: url("../source/carousel_slides/banner_slide_01.jpg");
+}
+.main-carousel .carousel-item-2 {
+  background-image: url("../source/carousel_slides/banner_slide_02.jpg");
 }
 
 .banners-section {
@@ -9257,6 +9275,11 @@ body {
 }
 .gallery-section__album .materialboxed {
   width: 100%;
+}
+
+.news-section .date {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .news-section__image {

@@ -2,11 +2,31 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-.main-carousel{
+.main-carousel {
   height: 350px;
-  .owl-carousel{
+
+  .owl-carousel {
     height: 350px;
   }
+
+  %carousel {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100vw;
+  }
+
+  @for $i from 1 through 2 {
+   /* ul:nth-child(3n + #{$i}) {
+      background-color: lighten($base-color, $i * 5%);
+    }*/
+    .carousel-item-#{$i} {
+      background-image: url("../source/carousel_slides/banner_slide_0#{$i}.jpg");
+      @extend %carousel
+    }
+  }
+
+
 }
 
 .banners-section {
@@ -59,7 +79,8 @@
 
     .card.horizontal .card-image {
       max-width: 100%;
-      img{
+
+      img {
         width: 100%;
       }
     }
@@ -71,7 +92,6 @@
       }
     }
   }
-
 
 
 }
