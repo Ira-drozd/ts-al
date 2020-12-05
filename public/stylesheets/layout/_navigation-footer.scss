@@ -1,8 +1,10 @@
 .footer__nav {
-  background: #283d53;
+  background: $main-blue-footer;
   display: flex;
 
+
   ul {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     list-style: none;
     padding: 0;
     display: flex;

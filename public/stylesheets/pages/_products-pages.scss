@@ -1,18 +1,35 @@
 
 .product-section {
- // margin-top: 40px;
+  // margin-top: 40px;
+}
+
+.flex-s-reverse {
+  @media (max-width: 600px) {
+
+  display: flex;
+  flex-direction: column;
+
+  .block-first {
+    order: 2;
+  }
+
+  .block-second {
+    order: 1;
+  }
+
+  }
 }
 
 
-
 .product-section__main-content {
- // margin-top: 40px;
-  .materialboxed{
+  // margin-top: 40px;
+  .materialboxed {
     //width: 100%;
     //max-width: 550px;
     max-width: 100%;
   }
-  .img-right{
+
+  .img-right {
     float: right;
     margin: 5px;
     @media (max-width: 600px) {
@@ -20,7 +37,7 @@
     }
   }
 
-  .img-left{
+  .img-left {
     float: left;
     margin: 5px;
     @media (max-width: 600px) {
@@ -28,7 +45,7 @@
     }
   }
 
-  .img-wrapper{
+  .img-wrapper {
     @media (max-width: 600px) {
       display: flex;
       justify-content: center;
@@ -36,20 +53,20 @@
     }
   }
 
- /* img{
-    @media (max-width: 600px) {
-      float: none;
-    }
-  }*/
+  /* img{
+     @media (max-width: 600px) {
+       float: none;
+     }
+   }*/
 
-  a{
-    &:hover{
+  a {
+    &:hover {
       text-decoration: none;
     }
   }
 
-  p{
-    span{
+  p {
+    span {
       color: $main-lightblue;
       font-weight: 600;
     }
@@ -63,21 +80,22 @@
       list-style: url("../source/icons/emojione-monotone_heavy-check-mark.svg");
     }
   }
-//последнее
- /* .tabs .tab a:hover, .tabs .tab a.active {
-    background-color: rgba(3, 155, 229, 0.1);
-    text-decoration: none;
-    // color: $main-lightblue;
-  }
 
-  .tabs .tab a {
-    color: $main-lightblue;
-    text-transform: none;
-  }
+  //последнее
+  /* .tabs .tab a:hover, .tabs .tab a.active {
+     background-color: rgba(3, 155, 229, 0.1);
+     text-decoration: none;
+     // color: $main-lightblue;
+   }
 
-  .tabs .indicator {
-    background-color: $main-lightblue;
-  }*/
+   .tabs .tab a {
+     color: $main-lightblue;
+     text-transform: none;
+   }
+
+   .tabs .indicator {
+     background-color: $main-lightblue;
+   }*/
 
   /* .tabs .tab a{
      color:#000;
@@ -98,7 +116,6 @@
    } !*Color of underline*!*/
 
 }
-
 
 
 .container-sectional-drawings {

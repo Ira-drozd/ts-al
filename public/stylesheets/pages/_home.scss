@@ -3,30 +3,73 @@
 // -----------------------------------------------------------------------------
 
 .main-carousel {
-  height: 350px;
+  //height: 350px;
+  height: 90vh;
+ // background: red;
 
   .owl-carousel {
-    height: 350px;
+   // height: 350px;
+    position: relative;
+  }
+
+  .link-to-products{
+    position: absolute;
+    bottom: 10px;
+    width: 5%;
+    right: 47.5%;
+    z-index: 500;
+    img{
+      width: 100%;
+    }
+    @media (max-width:600px) {
+      display: none;
+    }
   }
 
   %carousel {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 350px;
+    height: 90vh;
     width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-position: center top;
+
+    @media (max-width:600px) {
+      height: 85vh;
+    }
   }
 
-  @for $i from 1 through 2 {
-   /* ul:nth-child(3n + #{$i}) {
-      background-color: lighten($base-color, $i * 5%);
-    }*/
+  @for $i from 1 through 5 {
+    /* ul:nth-child(3n + #{$i}) {
+       background-color: lighten($base-color, $i * 5%);
+     }*/
     .carousel-item-#{$i} {
-      background-image: url("../source/carousel_slides/banner_slide_0#{$i}.jpg");
+      background-image: url("../source/carousel_slides/#{$i}_banner.jpg");
       @extend %carousel
     }
   }
 
+  .content {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 13px 20px 13px 45px;
+    letter-spacing: 0.1px;
+    transition: all 0.6s ease;
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    color: $main-blue-footer;
 
+    @media (max-width:600px){
+      font-size: 2rem;
+      padding: 10px 15px 10px 30px;
+    }
+
+    &:hover {
+      letter-spacing: 0.8px;
+    }
+  }
 }
 
 .banners-section {
