@@ -8815,7 +8815,7 @@ body {
     display: flex;
     position: absolute;
     right: -20px;
-    bottom: 20px;
+    bottom: 25px;
   }
 }
 .header__nav-button a {
