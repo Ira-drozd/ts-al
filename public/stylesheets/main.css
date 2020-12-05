@@ -8603,7 +8603,9 @@ body {
 }
 @media (max-width: 640px) {
   .header__menu {
-    min-height: 80px;
+    min-height: auto;
+    height: 40px;
+    flex-direction: row;
   }
 }
 
@@ -8622,8 +8624,10 @@ body {
 }
 @media (max-width: 640px) {
   .social {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: static;
+    flex-direction: row;
+    margin-left: 20%;
   }
 }
 .social a {
@@ -8642,6 +8646,11 @@ body {
 @media (max-width: 1200px) {
   .social svg {
     width: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .social svg {
+    width: 30px;
   }
 }
 .social .fa-phone-alt {
@@ -9158,7 +9167,6 @@ body {
   }
 }
 .main-carousel {
-  height: 90vh;
   /* ul:nth-child(3n + 1) {
      background-color: lighten($base-color, $i * 5%);
    }*/
@@ -9205,7 +9213,7 @@ body {
 }
 @media (max-width: 600px) {
   .main-carousel .carousel-item-5, .main-carousel .carousel-item-4, .main-carousel .carousel-item-3, .main-carousel .carousel-item-2, .main-carousel .carousel-item-1 {
-    height: 85vh;
+    height: 95vh;
   }
 }
 .main-carousel .carousel-item-1 {

@@ -4,8 +4,9 @@
 
 .main-carousel {
   //height: 350px;
-  height: 90vh;
+  //height: 100vh;
  // background: red;
+  //padding-top: 400px;
 
   .owl-carousel {
    // height: 350px;
@@ -37,7 +38,7 @@
     background-position: center top;
 
     @media (max-width:600px) {
-      height: 85vh;
+      height: 95vh;
     }
   }
 
