@@ -52,5 +52,12 @@ router.get('/cooperation', function (req, res) {
     })
 })
 
+router.get('/glazing', function (req, res) {
+    res.render('frameless-glazing', {
+        title: 'Frameless Glazing',
+        isProducts: true
+    })
+})
+
 
 module.exports = router

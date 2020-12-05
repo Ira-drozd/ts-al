@@ -15,7 +15,32 @@
   .img-right{
     float: right;
     margin: 5px;
+    @media (max-width: 600px) {
+      float: none;
+    }
   }
+
+  .img-left{
+    float: left;
+    margin: 5px;
+    @media (max-width: 600px) {
+      float: none;
+    }
+  }
+
+  .img-wrapper{
+    @media (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+ /* img{
+    @media (max-width: 600px) {
+      float: none;
+    }
+  }*/
 
   a{
     &:hover{
