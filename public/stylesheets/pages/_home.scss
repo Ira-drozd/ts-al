@@ -37,8 +37,9 @@
     align-items: center;
     background-position: center top;
 
-    @media (max-width:600px) {
+    @media (max-width: $mobile-s) {
       height: 95vh;
+      align-items: flex-end;
     }
   }
 
@@ -62,9 +63,10 @@
     font-size: 3rem;
     color: $main-blue-footer;
 
-    @media (max-width:600px){
+    @media (max-width: $mobile-s){
       font-size: 2rem;
       padding: 10px 15px 10px 30px;
+      margin-bottom: 30%;
     }
 
     &:hover {

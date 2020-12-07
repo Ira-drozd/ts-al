@@ -8563,7 +8563,13 @@ body {
   z-index: 998;
   top: 0;
   background: white;
-  border-bottom: 1px solid #F2F2F2;
+  border-bottom: 1px solid #f2f2f2;
+}
+@media (max-width: 640px) {
+  .my-header {
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: none;
+  }
 }
 
 .section-registration-link {
@@ -8660,10 +8666,10 @@ body {
   color: #0088cc;
 }
 .social .fa-viber {
-  color: #665CAC;
+  color: #665cac;
 }
 .social .fa-whatsapp {
-  color: #25D366;
+  color: #25d366;
 }
 
 @media (max-width: 640px) {
@@ -9211,9 +9217,10 @@ body {
   align-items: center;
   background-position: center top;
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .main-carousel .carousel-item-5, .main-carousel .carousel-item-4, .main-carousel .carousel-item-3, .main-carousel .carousel-item-2, .main-carousel .carousel-item-1 {
     height: 95vh;
+    align-items: flex-end;
   }
 }
 .main-carousel .carousel-item-1 {
@@ -9241,10 +9248,11 @@ body {
   font-size: 3rem;
   color: #253342;
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .main-carousel .content {
     font-size: 2rem;
     padding: 10px 15px 10px 30px;
+    margin-bottom: 30%;
   }
 }
 .main-carousel .content:hover {

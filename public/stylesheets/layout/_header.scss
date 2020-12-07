@@ -6,9 +6,12 @@
   z-index: 998;
   top: 0;
   background: white;
-  border-bottom: 1px solid #F2F2F2;
+  border-bottom: 1px solid #f2f2f2;
 
-
+  @media (max-width: $mobile-s) {
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: none;
+  }
 }
 
 .section-registration-link {
@@ -42,18 +45,16 @@
   min-height: 112px;
   position: relative;
 
-
   @media (max-width: $medium) {
     flex-direction: column;
     justify-content: center;
   }
 
   @media (max-width: $mobile-s) {
-    min-height:auto;
+    min-height: auto;
     height: 40px;
     flex-direction: row;
   }
-
 }
 
 .social {
@@ -72,7 +73,7 @@
     flex-wrap: nowrap;
     position: static;
     flex-direction: row;
-   margin-left: 20%;
+    margin-left: 20%;
   }
 
   a {
@@ -95,7 +96,6 @@
     @media (max-width: $mobile-s) {
       width: 30px;
     }
-
   }
 
   .fa-phone-alt {
@@ -107,32 +107,29 @@
   }
 
   .fa-viber {
-    color: #665CAC;
+    color: #665cac;
   }
 
-  .fa-whatsapp{
-    color: #25D366;
+  .fa-whatsapp {
+    color: #25d366;
   }
-
 }
 
-.social_tel{
+.social_tel {
   @media (max-width: $mobile-s) {
     display: none;
   }
 }
 
 .logo {
-
   @media (max-width: $medium) {
     align-self: flex-start;
   }
 
   @media (max-width: $mobile-s) {
     align-self: center;
-    img{
+    img {
       width: 100px;
     }
-
   }
 }
