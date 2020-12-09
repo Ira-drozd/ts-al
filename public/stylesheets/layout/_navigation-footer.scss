@@ -2,7 +2,6 @@
   background: $main-blue-footer;
   display: flex;
 
-
   ul {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     list-style: none;
@@ -13,34 +12,31 @@
     align-items: center;
     margin: 20px 0;
 
-
     li {
       padding: 15px 0;
       a {
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
         font-size: 1.2rem;
         margin: 0 6px;
-        color: #8E9AA7;
+        color: #8e9aa7;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           display: inline-block;
           width: 80%;
           border-bottom: 1px solid;
           color: inherit;
           bottom: -10px;
-
         }
 
         &:hover {
           text-decoration: none;
           color: $main-lightblue;
-
         }
       }
     }
@@ -49,5 +45,4 @@
   .footer__nav_active {
     color: $main-lightblue;
   }
-
 }

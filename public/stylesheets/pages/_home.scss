@@ -3,26 +3,27 @@
 // -----------------------------------------------------------------------------
 
 .main-carousel {
-  //height: 350px;
-  //height: 100vh;
- // background: red;
-  //padding-top: 400px;
+  height: 90vh;
+  width: 100vw;
+
+  @media (max-width: $mobile-s) {
+    height: 95vh;
+  }
 
   .owl-carousel {
-   // height: 350px;
     position: relative;
   }
 
-  .link-to-products{
+  .link-to-products {
     position: absolute;
     bottom: 10px;
     width: 5%;
     right: 47.5%;
     z-index: 500;
-    img{
+    img {
       width: 100%;
     }
-    @media (max-width:600px) {
+    @media (max-width: 600px) {
       display: none;
     }
   }
@@ -44,12 +45,9 @@
   }
 
   @for $i from 1 through 5 {
-    /* ul:nth-child(3n + #{$i}) {
-       background-color: lighten($base-color, $i * 5%);
-     }*/
     .carousel-item-#{$i} {
       background-image: url("../source/carousel_slides/#{$i}_banner.jpg");
-      @extend %carousel
+      @extend %carousel;
     }
   }
 
@@ -63,7 +61,7 @@
     font-size: 3rem;
     color: $main-blue-footer;
 
-    @media (max-width: $mobile-s){
+    @media (max-width: $mobile-s) {
       font-size: 2rem;
       padding: 10px 15px 10px 30px;
       margin-bottom: 30%;
@@ -77,7 +75,6 @@
 
 .banners-section {
   background: #fafafa;
-
 
   .banners-section__item {
     padding: 0 15px;
@@ -100,29 +97,16 @@
       }
     }
   }
-
 }
 
 .about-section {
-
-  .blue-card {
-    //  background: $main-lightblue;
-  }
-
-  .card .card-action a:not(.btn):not(.btn-small):not(.btn-large):not(.btn-large):not(.btn-floating) {
-    //  color: $main-lightblue;
-  }
-
   a {
-    // color: $main-lightblue;
-
     &:hover {
       text-decoration: none;
     }
   }
 
-  @media (max-width: 540px) {
-
+ /* @media (max-width: 540px) {
     .card.horizontal .card-image {
       max-width: 100%;
 
@@ -137,8 +121,5 @@
         flex-direction: column;
       }
     }
-  }
-
-
+  }*/
 }
-

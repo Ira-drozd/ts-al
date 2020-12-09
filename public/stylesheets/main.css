@@ -8462,21 +8462,6 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
-/*
-@font-face{
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 300;
-  src: url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
-}
-
-@font-face{
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-}
-*/
 /**
  * Basic typography style for copy text
  */
@@ -8575,7 +8560,7 @@ body {
 .section-registration-link {
   padding-top: 10px;
   padding-bottom: 5px;
-  background: #2C455C;
+  background: #2c455c;
 }
 @media (max-width: 1200px) {
   .section-registration-link {
@@ -8638,7 +8623,7 @@ body {
 }
 .social a {
   margin: 5px;
-  color: #2C455C;
+  color: #2c455c;
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -8774,9 +8759,6 @@ body {
 }
 .header__nav ul li {
   margin: 1px 0;
-  /* @media (max-width: $medium) {
-     margin: 15px 20px;
-   }*/
 }
 .header__nav ul li a {
   font-family: "Oswald", sans-serif;
@@ -8843,12 +8825,6 @@ body {
   background: #039be5;
   border-radius: 3px;
   transition: color 0.5s;
-  /* &:hover {
-     color: red;
-   }*/
-  /* &.visibility {
-     color: red;
-   }*/
 }
 .header__nav-button svg.open-menu.visibility {
   display: none;
@@ -8881,7 +8857,7 @@ body {
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   margin: 0 6px;
-  color: #8E9AA7;
+  color: #8e9aa7;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8916,14 +8892,6 @@ body {
   bottom: 0;
   top: 100%;
   transition: top 0.5s;
-  /* &.trigger {
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-    }
-  */
 }
 .outer-menu.toggle {
   left: 0;
@@ -9041,7 +9009,8 @@ body {
 .main-tabs-menu .tabs li.indicator {
   display: none;
 }
-.main-tabs-menu .tabs .tab a:hover, .main-tabs-menu .tabs .tab a.active {
+.main-tabs-menu .tabs .tab a:hover,
+.main-tabs-menu .tabs .tab a.active {
   background-color: rgba(3, 155, 229, 0.1);
   border-radius: 3px;
   text-decoration: none;
@@ -9072,8 +9041,10 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 90vw;
-  height: 60vh;
+  width: inherit;
+  height: inherit;
+  padding-right: 70px;
+  padding-bottom: 70px;
 }
 
 .lds-roller div {
@@ -9173,21 +9144,13 @@ body {
   }
 }
 .main-carousel {
-  /* ul:nth-child(3n + 1) {
-     background-color: lighten($base-color, $i * 5%);
-   }*/
-  /* ul:nth-child(3n + 2) {
-     background-color: lighten($base-color, $i * 5%);
-   }*/
-  /* ul:nth-child(3n + 3) {
-     background-color: lighten($base-color, $i * 5%);
-   }*/
-  /* ul:nth-child(3n + 4) {
-     background-color: lighten($base-color, $i * 5%);
-   }*/
-  /* ul:nth-child(3n + 5) {
-     background-color: lighten($base-color, $i * 5%);
-   }*/
+  height: 90vh;
+  width: 100vw;
+}
+@media (max-width: 640px) {
+  .main-carousel {
+    height: 95vh;
+  }
 }
 .main-carousel .owl-carousel {
   position: relative;
@@ -9280,20 +9243,26 @@ body {
   text-decoration: none;
 }
 
+.about-section {
+  /* @media (max-width: 540px) {
+     .card.horizontal .card-image {
+       max-width: 100%;
+
+       img {
+         width: 100%;
+       }
+     }
+
+     .card {
+       &.horizontal {
+         display: flex;
+         flex-direction: column;
+       }
+     }
+   }*/
+}
 .about-section a:hover {
   text-decoration: none;
-}
-@media (max-width: 540px) {
-  .about-section .card.horizontal .card-image {
-    max-width: 100%;
-  }
-  .about-section .card.horizontal .card-image img {
-    width: 100%;
-  }
-  .about-section .card.horizontal {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 600px) {
@@ -9309,44 +9278,6 @@ body {
   }
 }
 
-.product-section__main-content {
-  /* img{
-     @media (max-width: 600px) {
-       float: none;
-     }
-   }*/
-  /* .tabs .tab a:hover, .tabs .tab a.active {
-     background-color: rgba(3, 155, 229, 0.1);
-     text-decoration: none;
-     // color: $main-lightblue;
-   }
-
-   .tabs .tab a {
-     color: $main-lightblue;
-     text-transform: none;
-   }
-
-   .tabs .indicator {
-     background-color: $main-lightblue;
-   }*/
-  /* .tabs .tab a{
-     color:#000;
-   } !*Black color to the text*!
-
-   .tabs .tab a:hover {
-     background-color:#eee;
-     color:#000;
-   } !*Text color on hover*!
-
-   .tabs .tab a.active {
-     background-color:#888;
-     color:#000;
-   } !*Background and text color when a tab is active*!
-
-   .tabs .indicator {
-     background-color:#000;
-   } !*Color of underline*!*/
-}
 .product-section__main-content .materialboxed {
   max-width: 100%;
 }
@@ -9401,7 +9332,7 @@ body {
 }
 .contacts-section a {
   font-weight: 600;
-  color: #2C455C;
+  color: #2c455c;
 }
 .contacts-section a:hover {
   text-decoration: none;
@@ -9428,16 +9359,16 @@ body {
   color: #0088cc;
 }
 .contacts-section__contact .fa-viber {
-  color: #665CAC;
+  color: #665cac;
 }
 .contacts-section__contact .fa-whatsapp {
-  color: #25D366;
+  color: #25d366;
 }
 .contacts-section__contact .fa-facebook-square {
   color: #3b5998;
 }
 .contacts-section__contact .fa-instagram-square {
-  color: #E1306C;
+  color: #e1306c;
 }
 .contacts-section__contact .fa-linkedin {
   color: #0072b1;
@@ -9447,22 +9378,6 @@ body {
   margin-top: 40px;
 }
 
-.contacts-section__form {
-  /*
-  !* label focus color *!
-  .input-field input[type=text]:focus + label {
-    color: #039be5;
-  }
-  !* label color *!
-  .input-field label {
-    color: #039be5;
-  }
-  !* label underline focus color *!
-  .input-field input[type=text]:focus {
-    border-bottom: 1px solid #039be5;
-    box-shadow: 0 1px 0 0 #039be5;
-  }*/
-}
 .contacts-section__form .flex-button {
   display: flex;
   justify-content: center;
@@ -9502,6 +9417,16 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+.news-section p {
+  padding: 5px 0;
+}
+.news-section ul {
+  margin: 15px 0;
+  padding-left: 40px;
+}
+.news-section ul li {
+  list-style: url("../source/icons/emojione-monotone_heavy-check-mark-fff.svg");
+}
 
 .news-section__image {
   margin-top: 40px;
@@ -9522,6 +9447,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.error-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
 }
 
 /*# sourceMappingURL=main.css.map */

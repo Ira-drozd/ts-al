@@ -3,6 +3,19 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  p {
+    padding: 5px 0;
+  }
+
+  ul {
+    margin: 15px 0;
+    padding-left: 40px;
+
+    li {
+      list-style: url("../source/icons/emojione-monotone_heavy-check-mark-fff.svg");
+    }
+  }
 }
 
 .news-section__image {
@@ -18,7 +31,6 @@
   @media (max-width: 600px) {
     display: none;
   }
-  
 }
 
 .news-item-image {

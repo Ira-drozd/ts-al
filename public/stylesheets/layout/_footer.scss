@@ -10,22 +10,16 @@
     margin-bottom: 40px;
     position: relative;
 
-
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       display: inline-block;
       width: 100%;
       border-top: 1px solid rgba(255, 255, 255, 0.3);
-      //border-bottom: 1px solid;
-      //color: white;
       bottom: -10px;
       left: 0;
-
     }
   }
-
-
 }
 
 .footer__contacts__item {
@@ -57,5 +51,4 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }

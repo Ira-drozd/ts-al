@@ -1,14 +1,12 @@
 .contacts-section {
   // margin-top: 40px;
 
-  .social{
+  .social {
     position: static;
   }
 
   a {
-    // color: $main-lightblue;
     font-weight: 600;
-    //font-size: 1.1rem;
     color: $main-blue-header;
 
     &:hover {
@@ -18,7 +16,6 @@
 }
 
 .contacts-section__contact {
-
   li {
     display: flex;
     align-items: center;
@@ -27,7 +24,6 @@
       padding: 5px;
       display: flex;
       align-items: center;
-
     }
   }
 
@@ -36,20 +32,18 @@
     @media (max-width: $medium) {
       width: 40px;
     }
-
   }
-
 
   .fa-telegram-plane {
     color: #0088cc;
   }
 
   .fa-viber {
-    color: #665CAC;
+    color: #665cac;
   }
 
   .fa-whatsapp {
-    color: #25D366;
+    color: #25d366;
   }
 
   .fa-facebook-square {
@@ -57,7 +51,7 @@
   }
 
   .fa-instagram-square {
-    color: #E1306C;
+    color: #e1306c;
   }
 
   .fa-linkedin {
@@ -69,23 +63,9 @@
   margin-top: 40px;
 }
 
-.contacts-section__form{
- .flex-button{
-   display: flex;
-   justify-content: center;
- }
-  /*
-  !* label focus color *!
-  .input-field input[type=text]:focus + label {
-    color: #039be5;
+.contacts-section__form {
+  .flex-button {
+    display: flex;
+    justify-content: center;
   }
-  !* label color *!
-  .input-field label {
-    color: #039be5;
-  }
-  !* label underline focus color *!
-  .input-field input[type=text]:focus {
-    border-bottom: 1px solid #039be5;
-    box-shadow: 0 1px 0 0 #039be5;
-  }*/
 }

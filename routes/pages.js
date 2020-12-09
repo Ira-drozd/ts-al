@@ -1,63 +1,77 @@
-const {Router} = require('express')
-const router = Router()
+const { Router } = require("express");
+const router = Router();
+const SEO = require("./constants.js");
 
+router.get("/", function (req, res) {
+  res.render("index", {
+    title: SEO.index.title,
+    description: SEO.index.description,
+    isIndex: true,
+  });
+});
 
-router.get('/', function (req, res) {
-    res.render('index', {
-        title: 'TS-Aluminium',
-        isIndex: true
-    })
-})
+router.get("/products", function (req, res) {
+  res.render("products", {
+    title: SEO.products.title,
+    description: SEO.products.description,
+    isProducts: true,
+  });
+});
 
-router.get('/products', function (req, res) {
-    res.render('products', {
-        title: 'Products',
-        isProducts: true
-    })
-})
+router.get("/catalog", function (req, res) {
+  res.render("catalog", {
+    title: SEO.catalog.title,
+    description: SEO.catalog.description,
+    isCatalog: true,
+  });
+});
 
-router.get('/catalog', function (req, res) {
-    res.render('catalog', {
-        title: 'Catalog',
-        isCatalog: true
-    })
-})
+router.get("/gallery", function (req, res) {
+  res.render("gallery", {
+    title: SEO.gallery.title,
+    description: SEO.gallery.description,
+    isGallery: true,
+  });
+});
 
-router.get('/gallery', function (req, res) {
-    res.render('gallery', {
-        title: 'Gallery',
-        isGallery: true
-    })
-})
+router.get("/news", function (req, res) {
+  res.render("news", {
+    title: SEO.news.title,
+    description: SEO.news.description,
+    isNews: true,
+  });
+});
 
+router.get("/contacts", function (req, res) {
+  res.render("contacts", {
+    title: SEO.contacts.title,
+    description: SEO.contacts.description,
+    isContacts: true,
+  });
+});
 
-router.get('/news', function (req, res) {
-    res.render('news', {
-        title: 'News',
-        isNews: true
-    })
-})
+router.get("/cooperation", function (req, res) {
+  res.render("cooperation", {
+    title: SEO.cooperation.title,
+    description: SEO.cooperation.description,
+    isCooperation: true,
+  });
+});
 
-router.get('/contacts', function (req, res) {
-    res.render('contacts', {
-        title: 'Contacts',
-        isContacts: true
-    })
-})
+router.get("/glazing", function (req, res) {
+  res.render("frameless-glazing", {
+    title: SEO.framelessGlazing.title,
+    description: SEO.framelessGlazing.description,
+    isProducts: true,
+  });
+});
 
-router.get('/cooperation', function (req, res) {
-    res.render('cooperation', {
-        title: 'Cooperation',
-        isCooperation: true
-    })
-})
+router.get("/awnings", function (req, res) {
+  res.render("awnings", {
+    title: SEO.awnings.title,
+    description: SEO.awnings.description,
+    isProducts: true,
+  });
+});
 
-router.get('/glazing', function (req, res) {
-    res.render('frameless-glazing', {
-        title: 'Frameless Glazing',
-        isProducts: true
-    })
-})
-
-
-module.exports = router
+module.exports = router;
