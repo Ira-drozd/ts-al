@@ -9413,6 +9413,9 @@ body {
   width: 100%;
 }
 
+.news-section .materialboxed {
+  max-width: 100%;
+}
 .news-section .date {
   display: flex;
   justify-content: flex-end;

@@ -1,4 +1,8 @@
 .news-section {
+  .materialboxed {
+    max-width: 100%;
+  }
+
   .date {
     display: flex;
     justify-content: flex-end;
