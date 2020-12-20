@@ -9145,7 +9145,7 @@ body {
 }
 .main-carousel {
   height: 90vh;
-  width: 100vw;
+  width: 100%;
 }
 @media (max-width: 640px) {
   .main-carousel {

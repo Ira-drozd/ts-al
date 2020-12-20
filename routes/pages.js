@@ -74,4 +74,12 @@ router.get("/awnings", function (req, res) {
   });
 });
 
+router.get("/winter-garden", function (req, res) {
+  res.render("winter-garden", {
+    title: SEO.winterGarden.title,
+    description: SEO.winterGarden.description,
+    isProducts: true,
+  });
+});
+
 module.exports = router;

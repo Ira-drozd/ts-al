@@ -48,6 +48,10 @@ const SEO = {
     description:
       "Изготовление навесов из стекла и алюминия немецкой компании TS Aluminium для дома и кафе, навесы для автомобиля. Гарантия. ☎ +375 29 645-48-49",
   },
+  winterGarden: {
+    title: "winter-garden",
+    description: "winter-garden. Гарантия. ☎ +375 29 645-48-49",
+  },
 };
 
 module.exports = SEO;
