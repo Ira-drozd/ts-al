@@ -2,6 +2,21 @@
 {{> head}}
 
 <body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(70679533, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/70679533" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 {{> header}} {{> outer-menu}} {{{body}}} {{>footer}}
 
 <script src="js/jquery.min.js"></script>
@@ -26,24 +41,5 @@
  https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
 
-
-
-<script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-        apiKey: "AIzaSyCwouwTqPzpggkexE3ggTbueBtB6u7PCcE",
-        authDomain: "ts-aluminium.firebaseapp.com",
-        databaseURL: "https://ts-aluminium.firebaseio.com",
-        projectId: "ts-aluminium",
-        storageBucket: "ts-aluminium.appspot.com",
-        messagingSenderId: "108324520276",
-        appId: "1:108324520276:web:5197eace8061953d9848c1",
-        measurementId: "G-0KZD4QY39B",
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-</script>
 </body>
 </html>
