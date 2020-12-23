@@ -18,14 +18,6 @@ router.get("/products", function (req, res) {
   });
 });
 
-router.get("/catalog", function (req, res) {
-  res.render("catalog", {
-    title: SEO.catalog.title,
-    description: SEO.catalog.description,
-    isCatalog: true,
-  });
-});
-
 router.get("/gallery", function (req, res) {
   res.render("gallery", {
     title: SEO.gallery.title,
