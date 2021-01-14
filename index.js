@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const config = require("./config");
 const pagesRoutes = require("./routes/pages");
 const nodemailer = require("./nodemailer/index");
@@ -15,9 +16,9 @@ app.engine(
   })
 );
 app.set("view engine", "hbs");
-hbs.registerPartials(__dirname + "/views/partials");
+hbs.registerPartials(path.join(__dirname + "/views/partials"));
 app.set("views", "views");
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname + "/public")));
 app.use(pagesRoutes);
 app.use(nodemailer);
 
