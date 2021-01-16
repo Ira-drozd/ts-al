@@ -106,7 +106,7 @@
     }
   }
 
- /* @media (max-width: 540px) {
+  /* @media (max-width: 540px) {
     .card.horizontal .card-image {
       max-width: 100%;
 
@@ -122,4 +122,37 @@
       }
     }
   }*/
+}
+
+.main-page-text {
+  color: #fff;
+  ul {
+    margin: 15px 0;
+    padding-left: 40px;
+
+    li {
+      list-style: url("../source/icons/emojione-monotone_heavy-check-mark-fff.svg");
+    }
+  }
+
+  .wrapper-flex {
+    display: flex;
+    flex-direction: row;
+    div{
+      flex: 50%;
+      margin: 5px;
+    }
+    @media (max-width: $mobile-s){
+      flex-wrap: wrap;
+    }
+  }
+}
+
+#toggle-block {
+  //display: inline-block;
+  overflow: hidden;
+  &.closed {
+    visibility: hidden;
+    position: absolute;
+  }
 }

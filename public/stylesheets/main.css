@@ -9246,24 +9246,56 @@ body {
 
 .about-section {
   /* @media (max-width: 540px) {
-     .card.horizontal .card-image {
-       max-width: 100%;
+    .card.horizontal .card-image {
+      max-width: 100%;
 
-       img {
-         width: 100%;
-       }
-     }
+      img {
+        width: 100%;
+      }
+    }
 
-     .card {
-       &.horizontal {
-         display: flex;
-         flex-direction: column;
-       }
-     }
-   }*/
+    .card {
+      &.horizontal {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }*/
 }
 .about-section a:hover {
   text-decoration: none;
+}
+
+.main-page-text {
+  color: #fff;
+}
+.main-page-text ul {
+  margin: 15px 0;
+  padding-left: 40px;
+}
+.main-page-text ul li {
+  list-style: url("../source/icons/emojione-monotone_heavy-check-mark-fff.svg");
+}
+.main-page-text .wrapper-flex {
+  display: flex;
+  flex-direction: row;
+}
+.main-page-text .wrapper-flex div {
+  flex: 50%;
+  margin: 5px;
+}
+@media (max-width: 640px) {
+  .main-page-text .wrapper-flex {
+    flex-wrap: wrap;
+  }
+}
+
+#toggle-block {
+  overflow: hidden;
+}
+#toggle-block.closed {
+  visibility: hidden;
+  position: absolute;
 }
 
 @media (max-width: 600px) {
