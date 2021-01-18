@@ -9244,24 +9244,6 @@ body {
   text-decoration: none;
 }
 
-.about-section {
-  /* @media (max-width: 540px) {
-    .card.horizontal .card-image {
-      max-width: 100%;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .card {
-      &.horizontal {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-  }*/
-}
 .about-section a:hover {
   text-decoration: none;
 }
@@ -9288,14 +9270,6 @@ body {
   .main-page-text .wrapper-flex {
     flex-wrap: wrap;
   }
-}
-
-#toggle-block {
-  overflow: hidden;
-}
-#toggle-block.closed {
-  visibility: hidden;
-  position: absolute;
 }
 
 @media (max-width: 600px) {
