@@ -8646,6 +8646,7 @@ body {
 }
 .social .fa-phone-alt {
   color: #25d366;
+  width: 22px;
 }
 .social .fa-telegram-plane {
   color: #0088cc;
@@ -8657,6 +8658,11 @@ body {
   color: #25d366;
 }
 
+.social_tel {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
 @media (max-width: 640px) {
   .social_tel {
     display: none;

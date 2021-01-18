@@ -100,6 +100,7 @@
 
   .fa-phone-alt {
     color: #25d366;
+    width: 22px;
   }
 
   .fa-telegram-plane {
@@ -116,6 +117,11 @@
 }
 
 .social_tel {
+
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 5px;
+
   @media (max-width: $mobile-s) {
     display: none;
   }
