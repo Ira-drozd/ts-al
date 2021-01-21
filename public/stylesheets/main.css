@@ -9254,15 +9254,12 @@ body {
   text-decoration: none;
 }
 
-.main-page-text {
-  color: #fff;
-}
 .main-page-text ul {
   margin: 15px 0;
   padding-left: 40px;
 }
 .main-page-text ul li {
-  list-style: url("../source/icons/emojione-monotone_heavy-check-mark-fff.svg");
+  list-style: url("../source/icons/emojione-monotone_heavy-check-mark.svg");
 }
 .main-page-text .wrapper-flex {
   display: flex;
