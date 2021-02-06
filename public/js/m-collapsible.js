@@ -22,13 +22,4 @@ $(document).ready(function () {
       console.log("qwe2");
     }
   });
-
-  $("#terraces-link").click(async function () {
-  //  console.log('terraces-link')
-    await document.location.href = "/products";
-     $("#isolated-systems").addClass("tabs-display-none");
-     $("#uninsulated-systems").removeClass("tabs-display-none");
-     $('.tabs').tabs('select','terraces');
-  });
-
 });

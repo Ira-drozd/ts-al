@@ -74,4 +74,12 @@ router.get("/winter-garden", function (req, res) {
   });
 });
 
+router.get("/terraces", function (req, res) {
+  res.render("terraces", {
+    title: SEO.winterGarden.title,
+    description: SEO.winterGarden.description,
+    isProducts: true,
+  });
+});
+
 module.exports = router;
